@@ -6,7 +6,7 @@ import dotenv from 'dotenv'
 import cors from 'cors'
 import bodyParser from 'body-parser';
 
-const PORT = 9000;
+const PORT = process.env.PORT || 9000;
 
 const app = express()
 dotenv.config();
